@@ -144,3 +144,53 @@ a:hover:before {
     height: 9rem;
     border-radius: 50%;
 }
+
+.container-nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.container-theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-profile {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-profile h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 0 5px 0;
+}
+
+.container-profile h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.conteiner-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container-text {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
