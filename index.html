@@ -9,20 +9,37 @@
     <link rel="shortcut icon" type="image/png" href="images/seo.png">
 </head>
 <body>
-    <nav>
+    <nav id="teste">
         <a href="#">Início</a>
         <a href="#Sobre">Sobre mim</a>
         <a href="#Projetos">Projetos</a>
     </nav>
-    <div class="foto-tema">
-        <img src="/images/MoonFill.svg" alt="Ícone de Lua para mudança de tema">
-        <img class="foto-perfil" src="/images/Foto de perfil.jpeg" alt="Foto de perfil">
+
+    <div>
+        <input type="checkbox" class="checkbox" id="chk">
+        <label class="label" for="chk">
+            <img src="images/MoonFill.svg" alt="Ícone de lua" class="img-theme">
+            <img src="images/SunFill.svg" alt="Ícone do sol" class="img-theme">
+            <div class="ball"></div>
+        </label>
     </div>
+
+    <img class="foto-perfil" src="/images/Foto de perfil.jpeg" alt="Foto de perfil">
     <h1>Nicolas Duarte</h1>
     <h2>Frontend Developer</h2>
-    <img src="/images/Linkedin.svg" alt="Ícone do Linkedin">
-    <img src="/images/gitHub.svg" alt="Ícone do GitHub">
-    <img src="/images/PersonLinesFill.svg" alt="Ícone para baixar Cúrriculo">
+
+    <a href="https://www.linkedin.com/in/nicolas-duarte-dev/" target="_blank">
+        <img id="myImage1" src="/images/Linkedin.svg" alt="Ícone do Linkedin" class="icons">
+    </a>
+    <a href="https://github.com/NicoProgramador" target="_blank">
+        <img id="myImage2" src="/images/gitHub.svg" alt="Ícone do GitHub" class="icons">
+    </a>
+    <a href="Currículo_NicolasDuarte.docx" download>
+        <img  id="myImage3" src="/images/PersonLinesFill.svg" alt="Ícone para baixar Cúrriculo" class="icons">
+    </a>
     <p>Sou apaixonado por desenvolvimento front-end, criando interfaces intuitivas e atraentes, melhorando a experiência do usuário.</p>
+
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </body>
 </html>
