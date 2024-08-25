@@ -400,19 +400,19 @@ a:hover:before {
 }
 
 .change-image1:hover::before {
-    background-image: url(/images/NDS-Commerce-image.png);
+    background-image: url(images/NDS-Commerce-image.png);
 }
 
 .change-image2:hover::before {
-    background-image: url(/images/ViaCEP.png);
+    background-image: url(images/ViaCEP.png);
 }
 
 .change-image3:hover::before {
-    background-image: url(/images/calculadora-change.png);
+    background-image: url(images/calculadora-change.png);
 }
 
 .change-image4:hover::before {
-    background-image: url(/images/the-last-of-us-change.png);
+    background-image: url(images/the-last-of-us-change.png);
 }
 
 .card-item:hover img, 
