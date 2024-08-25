@@ -18,6 +18,7 @@
 }
 
 body {
+    min-width: 320px;
     background-color: var(--bg-white);
     transition: background 0.3s linear;
     font-family: 'Rubik', sans-serif;
@@ -430,4 +431,103 @@ a:hover:before {
     justify-content: center;
     padding: 60px 0 40px 0;
     font-size: 12px;
+    cursor: default;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 80px;
+    }
+
+    .container-nav-bar {
+        max-width: 700px;
+        margin-left: 90px;
+    }
+
+    .container-text {
+        max-width: 400px;
+        margin-left: 130px;
+    }
+
+    .container-about-me {
+        margin-right: 20px;
+    }
+
+    .container-about-me p {
+        max-width: 400px;
+    }
+
+    .frontend-skills {
+        max-width: 400px;
+        margin-left: 110px;
+    }
+
+    .backend-skills {
+        max-width: 400px;
+        margin-left: 110px;
+    }
+
+    .framework-skills {
+        max-width: 400px;
+        margin-left: 110px;
+    }
+
+    .responsive-768{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .responsive-768 a {
+        padding: 20px;
+    }
+
+    .teste {
+        margin-top: 40px;
+    }
+
+    .change-image4 img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .change-image4 p {
+        margin-bottom: 10px;
+    }
+
+    .card-item {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        padding: 80px;
+    }
+
+    .container-nav-bar {
+        max-width: 700px;
+        margin-left: 300px;
+    }
+
+    .container-text {
+        max-width: 400px;
+        margin-left: 340px;
+    }
+
+    .frontend-skills {
+        max-width: 400px;
+        margin-left: 320px;
+    }
+
+    .backend-skills {
+        max-width: 400px;
+        margin-left: 320px;
+    }
+
+    .framework-skills {
+        max-width: 400px;
+        margin-left: 320px;
+    }
 }
