@@ -14,6 +14,7 @@
     --font-dark-mode: #fff;
     --bg-fontHover-white: #3a24dc;
     --bg-fontHover-dark: #3cc368;
+    --bg-card: #b8b8b8;
 }
 
 body {
@@ -103,14 +104,13 @@ a {
 }
 
 .label .ball {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     position: absolute;
     top: 2px;
     left: 2px;
     height: 22px;
     width: 22px;
-
     transform: translateX(0px);
     transition: transform 0.2s linear;
 }
@@ -270,6 +270,7 @@ a:hover:before {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: default;
 }
 
 .frontend-skills p {
@@ -298,6 +299,7 @@ a:hover:before {
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+    cursor: default;
 }
 
 .backend-skills p {
@@ -315,6 +317,7 @@ a:hover:before {
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+    cursor: default;
 }
 
 .framework-skills p {
@@ -324,4 +327,98 @@ a:hover:before {
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.container-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-projects h2 {
+    margin: 40px 0;
+    cursor: default;
+    text-align: center;
+}
+
+.card-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bg-card);
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card-item p {
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.container-projects a {
+    text-decoration: none;
+    color: var(--font-white-mode);
+}
+
+.container-projects a::before {
+    display: none;
+}
+
+.card-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.card-item:hover::before {
+    opacity: 1;
+}
+
+.card-item img,
+.card-item p {
+    position: relative;
+    z-index: 1;
+}
+
+.change-image1:hover::before {
+    background-image: url(/images/NDS-Commerce-image.png);
+}
+
+.change-image2:hover::before {
+    background-image: url(/images/ViaCEP.png);
+}
+
+.change-image3:hover::before {
+    background-image: url(/images/calculadora-change.png);
+}
+
+.change-image4:hover::before {
+    background-image: url(/images/the-last-of-us-change.png);
+}
+
+.card-item:hover img, 
+.card-item:hover p{
+    display: none;
+}
+
+.card-item:hover {
+    transform: scale(1.1);
 }
