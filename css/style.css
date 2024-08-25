@@ -337,7 +337,7 @@ a:hover:before {
 }
 
 .container-projects h2 {
-    margin: 40px 0;
+    margin: 100px 0 40px 0;
     cursor: default;
     text-align: center;
 }
@@ -421,4 +421,13 @@ a:hover:before {
 
 .card-item:hover {
     transform: scale(1.1);
+}
+
+.container-footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 40px 0;
+    font-size: 12px;
 }
